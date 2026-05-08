@@ -1,0 +1,16 @@
+[2026-05-08T02:53:19Z] === ENRICH ITERATION 3 START | repo=bojand/infer sha=4256ea07 ===
+[2026-05-08T02:53:19Z] [iter=3] PHASE START: enrich repo=bojand/infer sha=4256ea07 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/4256ea07-enrich-iter-003.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/4256ea07165a9393186b6c190541fac4b5e6f9f5.nq.gz
+[2026-05-08T02:53:19Z] [iter=3] Step 1: Loading AST into disk-backed store mem_mb=79 MB
+[2026-05-08T02:53:20Z] [iter=3] AST store loaded triples=85979 load_secs=1 mem_mb=201 MB
+[2026-05-08T02:53:20Z] [iter=3] Step 2: Finding LSP targets mem_mb=201 MB
+[2026-05-08T02:53:20Z] [iter=3] LSP targets found call_sites=409 imports=13 extends=0 implements=0 secs=0
+[2026-05-08T02:53:20Z] [iter=3] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=201 MB
+[2026-05-08T02:53:21Z] [iter=3] Position index built positions=5453 nodes_with_types=6121 secs=0 mem_mb=201 MB
+[2026-05-08T02:53:21Z] [iter=3] Step 3: Starting LSP resolution mem_mb=201 MB already_completed_types=[] already_completed_files=0
+[2026-05-08T02:53:21Z] [iter=3] Resolving target type target_type=call_site count=409
+[2026-05-08T02:53:41Z] [iter=3] Target type resolved target_type=call_site resolved=84 errors=308 secs=20 mem_mb=201 MB
+[2026-05-08T02:53:41Z] [iter=3] Resolving target type target_type=import_statement count=13
+[2026-05-08T02:53:48Z] [iter=3] Target type resolved target_type=import_statement resolved=13 errors=0 secs=7 mem_mb=201 MB
+[2026-05-08T02:53:55Z] [iter=3] Step 5: Writing final enrichment file triples=3835
+[2026-05-08T02:53:56Z] [iter=3] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/4256ea07165a9393186b6c190541fac4b5e6f9f5.nq.gz size_kb=55
+[2026-05-08T02:53:56Z] [iter=3] PHASE END: enrich elapsed_s=37 elapsed_min=0.6 total_triples=3835
